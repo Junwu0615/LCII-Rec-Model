@@ -1,0 +1,86 @@
+INFO:root:2023-01-06 04:14:02.507826
+------------------------------------------
+DATASET: steam | MODEL: LCII_ver_original_dropout_0
+SWITCH_INITIAL_STATE: True | USE_FC_IN_INPUT-SUM: False
+STRATEGY: original | FUSION_WAY: none | SWITCH_PLOT: attention_gate_dot
+ADJACENT_WINDOW_RATIO(0-100%): 0 | LONG_TERM_SCORE: no_use | SHORT_TERM_SCORE: no_use
+DROPOUT: 0 | LEARNING_RATE: 0.001 | BATCHSIZE: 100 | SEED: 0
+OUTER_RNN_SIZE: 80 | INNER_RNN_SIZE: 80 | EMBEDDING_SIZE: 80
+TRAIN_N_SESSIONS: 9501 | N_ITEMS: 4332 | N_LAYERS: 1 | SEQLEN: 14 | MAX_EPOCHS: 200
+------------------------------------------
+
+WARNING:tensorflow:From <ipython-input-4-742517ba8d5f>:132: GRUCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.GRUCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From <ipython-input-4-742517ba8d5f>:135: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From C:\Users\Jun\Anaconda3\envs\Jun-model\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From C:\Users\Jun\Anaconda3\envs\Jun-model\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:564: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From C:\Users\Jun\Anaconda3\envs\Jun-model\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:574: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From C:\Users\Jun\Anaconda3\envs\Jun-model\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From <ipython-input-4-742517ba8d5f>:199: MultiRNNCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.StackedRNNCells, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From <ipython-input-4-742517ba8d5f>:223: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+INFO:root:2023-01-06 04:46:55.962553
+	Epoch #: 1
+	Epoch loss: nan
+
+
+i<=1 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0003 MRR@10: 0.0 NDCG@10: 0.0001 Recall@20: 0.0012 MRR@20: 0.0001 NDCG@20: 0.0003 
+i<=2 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0004 MRR@10: 0.0001 NDCG@10: 0.0001 Recall@20: 0.0015 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=3 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0006 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0015 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=4 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0006 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0015 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=5 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0006 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0015 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=6 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0006 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0015 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=7 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0006 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=8 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=9 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=10 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=11 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=12 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=13 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=14 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+
+INFO:root:2023-01-06 04:46:56.622855
+------------------------------------------
+DATASET: steam | MODEL: LCII_ver_post-combine_w-4_fix_L-0.2_S-0.8_dropout_0
+SWITCH_INITIAL_STATE: True | USE_FC_IN_INPUT-SUM: False
+STRATEGY: post-combine | FUSION_WAY: fix | SWITCH_PLOT: attention_gate_dot
+ADJACENT_WINDOW_RATIO(0-100%): 4 | LONG_TERM_SCORE: 0.2 | SHORT_TERM_SCORE: 0.8
+DROPOUT: 0 | LEARNING_RATE: 0.001 | BATCHSIZE: 100 | SEED: 0
+OUTER_RNN_SIZE: 80 | INNER_RNN_SIZE: 80 | EMBEDDING_SIZE: 80
+TRAIN_N_SESSIONS: 9501 | N_ITEMS: 4332 | N_LAYERS: 1 | SEQLEN: 14 | MAX_EPOCHS: 200
+------------------------------------------
+
+INFO:root:2023-01-06 05:19:23.382122
+	Epoch #: 1
+	Epoch loss: nan
+
+
+i<=1 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0003 MRR@10: 0.0 NDCG@10: 0.0001 Recall@20: 0.0012 MRR@20: 0.0001 NDCG@20: 0.0003 
+i<=2 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0004 MRR@10: 0.0001 NDCG@10: 0.0001 Recall@20: 0.0015 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=3 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0006 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0015 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=4 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0006 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0015 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=5 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0006 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0015 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=6 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0006 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0015 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=7 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0006 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=8 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=9 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=10 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=11 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=12 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=13 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+i<=14 Recall@5: 0.0 MRR@5: 0.0 NDCG@5: 0.0 Recall@10: 0.0005 MRR@10: 0.0001 NDCG@10: 0.0002 Recall@20: 0.0014 MRR@20: 0.0001 NDCG@20: 0.0004 
+

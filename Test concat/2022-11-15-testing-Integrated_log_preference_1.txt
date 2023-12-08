@@ -1,0 +1,189 @@
+INFO:root:2022-11-15 00:39:20.405077
+------------------------------------------
+DATASET: amazon | MODEL: LCII_ver_post-combine_w-65_att
+SWITCH_INITIAL_STATE: True | USE_FC_IN_INPUT-SUM: False
+STRATEGY: post-combine | FUSION_WAY: att | SWITCH_PLOT: attention_gate_dot
+ADJACENT_WINDOW_RATIO(0-100%): 65 | LONG_TERM_SCORE: no_use | SHORT_TERM_SCORE: no_use
+DROPOUT: 0.8 | LEARNING_RATE: 0.001 | BATCHSIZE: 100 | SEED: 0
+OUTER_RNN_SIZE: 80 | INNER_RNN_SIZE: 80 | EMBEDDING_SIZE: 80
+TRAIN_N_SESSIONS: 24658 | N_ITEMS: 46959 | N_LAYERS: 1 | SEQLEN: 19 | MAX_EPOCHS: 100
+------------------------------------------
+
+WARNING:tensorflow:From <ipython-input-4-6cb45a4d8720>:132: GRUCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.GRUCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From <ipython-input-4-6cb45a4d8720>:135: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From C:\Users\Jun\Anaconda3\envs\Jun-model\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From C:\Users\Jun\Anaconda3\envs\Jun-model\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:564: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From C:\Users\Jun\Anaconda3\envs\Jun-model\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:574: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From C:\Users\Jun\Anaconda3\envs\Jun-model\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From <ipython-input-4-6cb45a4d8720>:200: MultiRNNCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.StackedRNNCells, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From <ipython-input-4-6cb45a4d8720>:228: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+INFO:root:2022-11-15 02:03:44.478912
+	Epoch #: 100
+	Epoch loss: 54.04577478766441
+
+
+i<=1 Recall@5: 0.1846 MRR@5: 0.1712 NDCG@5: 0.1749 Recall@10: 0.1937 MRR@10: 0.1724 NDCG@10: 0.1778 Recall@20: 0.2002 MRR@20: 0.1729 NDCG@20: 0.1796 
+i<=2 Recall@5: 0.1744 MRR@5: 0.1607 NDCG@5: 0.1648 Recall@10: 0.1832 MRR@10: 0.1619 NDCG@10: 0.1673 Recall@20: 0.1904 MRR@20: 0.1624 NDCG@20: 0.1693 
+i<=3 Recall@5: 0.171 MRR@5: 0.1566 NDCG@5: 0.1613 Recall@10: 0.1794 MRR@10: 0.1577 NDCG@10: 0.1635 Recall@20: 0.1867 MRR@20: 0.1582 NDCG@20: 0.1652 
+i<=4 Recall@5: 0.1692 MRR@5: 0.154 NDCG@5: 0.1592 Recall@10: 0.1775 MRR@10: 0.1551 NDCG@10: 0.1614 Recall@20: 0.1847 MRR@20: 0.1556 NDCG@20: 0.163 
+i<=5 Recall@5: 0.1682 MRR@5: 0.1524 NDCG@5: 0.1578 Recall@10: 0.1764 MRR@10: 0.1535 NDCG@10: 0.1602 Recall@20: 0.1836 MRR@20: 0.154 NDCG@20: 0.1618 
+i<=6 Recall@5: 0.1683 MRR@5: 0.1522 NDCG@5: 0.1567 Recall@10: 0.1768 MRR@10: 0.1534 NDCG@10: 0.1606 Recall@20: 0.1839 MRR@20: 0.1539 NDCG@20: 0.162 
+i<=7 Recall@5: 0.1694 MRR@5: 0.1526 NDCG@5: 0.1554 Recall@10: 0.178 MRR@10: 0.1538 NDCG@10: 0.1615 Recall@20: 0.1853 MRR@20: 0.1543 NDCG@20: 0.1631 
+i<=8 Recall@5: 0.1704 MRR@5: 0.1535 NDCG@5: 0.1541 Recall@10: 0.179 MRR@10: 0.1546 NDCG@10: 0.1624 Recall@20: 0.1863 MRR@20: 0.1551 NDCG@20: 0.1641 
+i<=9 Recall@5: 0.1713 MRR@5: 0.1541 NDCG@5: 0.1534 Recall@10: 0.1801 MRR@10: 0.1552 NDCG@10: 0.1635 Recall@20: 0.1874 MRR@20: 0.1557 NDCG@20: 0.1651 
+i<=10 Recall@5: 0.172 MRR@5: 0.1546 NDCG@5: 0.1526 Recall@10: 0.1809 MRR@10: 0.1559 NDCG@10: 0.1643 Recall@20: 0.1884 MRR@20: 0.1564 NDCG@20: 0.1661 
+i<=11 Recall@5: 0.1723 MRR@5: 0.1547 NDCG@5: 0.152 Recall@10: 0.1813 MRR@10: 0.1559 NDCG@10: 0.1643 Recall@20: 0.1887 MRR@20: 0.1565 NDCG@20: 0.1664 
+i<=12 Recall@5: 0.1726 MRR@5: 0.1547 NDCG@5: 0.1516 Recall@10: 0.1818 MRR@10: 0.156 NDCG@10: 0.1644 Recall@20: 0.1893 MRR@20: 0.1565 NDCG@20: 0.167 
+i<=13 Recall@5: 0.173 MRR@5: 0.1548 NDCG@5: 0.1512 Recall@10: 0.1822 MRR@10: 0.156 NDCG@10: 0.1643 Recall@20: 0.1897 MRR@20: 0.1566 NDCG@20: 0.1674 
+i<=14 Recall@5: 0.1734 MRR@5: 0.155 NDCG@5: 0.1509 Recall@10: 0.1826 MRR@10: 0.1562 NDCG@10: 0.1642 Recall@20: 0.1902 MRR@20: 0.1567 NDCG@20: 0.1679 
+i<=15 Recall@5: 0.1738 MRR@5: 0.1551 NDCG@5: 0.1507 Recall@10: 0.183 MRR@10: 0.1564 NDCG@10: 0.1641 Recall@20: 0.1906 MRR@20: 0.1569 NDCG@20: 0.1683 
+i<=16 Recall@5: 0.1742 MRR@5: 0.1553 NDCG@5: 0.1505 Recall@10: 0.1834 MRR@10: 0.1565 NDCG@10: 0.164 Recall@20: 0.191 MRR@20: 0.157 NDCG@20: 0.1687 
+i<=17 Recall@5: 0.1745 MRR@5: 0.1555 NDCG@5: 0.1503 Recall@10: 0.1838 MRR@10: 0.1567 NDCG@10: 0.1638 Recall@20: 0.1914 MRR@20: 0.1573 NDCG@20: 0.169 
+i<=18 Recall@5: 0.1749 MRR@5: 0.1558 NDCG@5: 0.1501 Recall@10: 0.1842 MRR@10: 0.1571 NDCG@10: 0.1637 Recall@20: 0.1917 MRR@20: 0.1576 NDCG@20: 0.1694 
+i<=19 Recall@5: 0.1752 MRR@5: 0.156 NDCG@5: 0.15 Recall@10: 0.1844 MRR@10: 0.1572 NDCG@10: 0.1636 Recall@20: 0.192 MRR@20: 0.1578 NDCG@20: 0.1696 
+
+INFO:root:2022-11-15 02:03:44.947803
+------------------------------------------
+DATASET: amazon | MODEL: LCII_ver_post-combine_w-65_fix_L-0.5_S-0.5
+SWITCH_INITIAL_STATE: True | USE_FC_IN_INPUT-SUM: False
+STRATEGY: post-combine | FUSION_WAY: fix | SWITCH_PLOT: attention_gate_dot
+ADJACENT_WINDOW_RATIO(0-100%): 65 | LONG_TERM_SCORE: 0.5 | SHORT_TERM_SCORE: 0.5
+DROPOUT: 0.8 | LEARNING_RATE: 0.001 | BATCHSIZE: 100 | SEED: 0
+OUTER_RNN_SIZE: 80 | INNER_RNN_SIZE: 80 | EMBEDDING_SIZE: 80
+TRAIN_N_SESSIONS: 24658 | N_ITEMS: 46959 | N_LAYERS: 1 | SEQLEN: 19 | MAX_EPOCHS: 100
+------------------------------------------
+
+INFO:root:2022-11-15 03:30:28.221873
+	Epoch #: 98
+	Epoch loss: 56.20222823321819
+
+
+i<=1 Recall@5: 0.1825 MRR@5: 0.1647 NDCG@5: 0.1693 Recall@10: 0.1913 MRR@10: 0.1659 NDCG@10: 0.1722 Recall@20: 0.1987 MRR@20: 0.1664 NDCG@20: 0.1739 
+i<=2 Recall@5: 0.1733 MRR@5: 0.1568 NDCG@5: 0.1612 Recall@10: 0.1812 MRR@10: 0.1579 NDCG@10: 0.1634 Recall@20: 0.1886 MRR@20: 0.1584 NDCG@20: 0.1644 
+i<=3 Recall@5: 0.1696 MRR@5: 0.1533 NDCG@5: 0.1581 Recall@10: 0.1776 MRR@10: 0.1544 NDCG@10: 0.1604 Recall@20: 0.1851 MRR@20: 0.155 NDCG@20: 0.1612 
+i<=4 Recall@5: 0.1671 MRR@5: 0.151 NDCG@5: 0.156 Recall@10: 0.1751 MRR@10: 0.1521 NDCG@10: 0.1581 Recall@20: 0.1826 MRR@20: 0.1527 NDCG@20: 0.1588 
+i<=5 Recall@5: 0.166 MRR@5: 0.1496 NDCG@5: 0.1548 Recall@10: 0.1741 MRR@10: 0.1508 NDCG@10: 0.1572 Recall@20: 0.1818 MRR@20: 0.1513 NDCG@20: 0.158 
+i<=6 Recall@5: 0.1663 MRR@5: 0.1495 NDCG@5: 0.1536 Recall@10: 0.1744 MRR@10: 0.1506 NDCG@10: 0.1574 Recall@20: 0.1821 MRR@20: 0.1512 NDCG@20: 0.1583 
+i<=7 Recall@5: 0.1676 MRR@5: 0.1502 NDCG@5: 0.1525 Recall@10: 0.1756 MRR@10: 0.1513 NDCG@10: 0.1586 Recall@20: 0.1833 MRR@20: 0.1519 NDCG@20: 0.1595 
+i<=8 Recall@5: 0.1684 MRR@5: 0.1508 NDCG@5: 0.151 Recall@10: 0.1766 MRR@10: 0.1519 NDCG@10: 0.1595 Recall@20: 0.1843 MRR@20: 0.1525 NDCG@20: 0.1603 
+i<=9 Recall@5: 0.1694 MRR@5: 0.1514 NDCG@5: 0.1499 Recall@10: 0.1778 MRR@10: 0.1526 NDCG@10: 0.1606 Recall@20: 0.1855 MRR@20: 0.1531 NDCG@20: 0.1614 
+i<=10 Recall@5: 0.1701 MRR@5: 0.152 NDCG@5: 0.1492 Recall@10: 0.1785 MRR@10: 0.1532 NDCG@10: 0.1613 Recall@20: 0.1864 MRR@20: 0.1537 NDCG@20: 0.1623 
+i<=11 Recall@5: 0.1705 MRR@5: 0.1522 NDCG@5: 0.1486 Recall@10: 0.179 MRR@10: 0.1534 NDCG@10: 0.1614 Recall@20: 0.1868 MRR@20: 0.1539 NDCG@20: 0.1627 
+i<=12 Recall@5: 0.1708 MRR@5: 0.1524 NDCG@5: 0.1482 Recall@10: 0.1793 MRR@10: 0.1536 NDCG@10: 0.1613 Recall@20: 0.1871 MRR@20: 0.1541 NDCG@20: 0.1631 
+i<=13 Recall@5: 0.1712 MRR@5: 0.1526 NDCG@5: 0.1478 Recall@10: 0.1798 MRR@10: 0.1538 NDCG@10: 0.1613 Recall@20: 0.1875 MRR@20: 0.1544 NDCG@20: 0.1635 
+i<=14 Recall@5: 0.1716 MRR@5: 0.1529 NDCG@5: 0.1476 Recall@10: 0.1801 MRR@10: 0.1541 NDCG@10: 0.1612 Recall@20: 0.188 MRR@20: 0.1546 NDCG@20: 0.1639 
+i<=15 Recall@5: 0.1719 MRR@5: 0.1531 NDCG@5: 0.1473 Recall@10: 0.1804 MRR@10: 0.1543 NDCG@10: 0.161 Recall@20: 0.1883 MRR@20: 0.1548 NDCG@20: 0.1642 
+i<=16 Recall@5: 0.1723 MRR@5: 0.1534 NDCG@5: 0.1471 Recall@10: 0.1808 MRR@10: 0.1546 NDCG@10: 0.161 Recall@20: 0.1887 MRR@20: 0.1552 NDCG@20: 0.1647 
+i<=17 Recall@5: 0.1726 MRR@5: 0.1536 NDCG@5: 0.1469 Recall@10: 0.1812 MRR@10: 0.1548 NDCG@10: 0.1609 Recall@20: 0.1891 MRR@20: 0.1554 NDCG@20: 0.165 
+i<=18 Recall@5: 0.173 MRR@5: 0.1539 NDCG@5: 0.1468 Recall@10: 0.1816 MRR@10: 0.1551 NDCG@10: 0.1608 Recall@20: 0.1895 MRR@20: 0.1556 NDCG@20: 0.1654 
+i<=19 Recall@5: 0.1732 MRR@5: 0.1541 NDCG@5: 0.1467 Recall@10: 0.1819 MRR@10: 0.1553 NDCG@10: 0.1607 Recall@20: 0.1897 MRR@20: 0.1559 NDCG@20: 0.1656 
+
+INFO:root:2022-11-15 03:30:28.842641
+------------------------------------------
+DATASET: steam | MODEL: LCII_ver_post-combine_w-4_lp
+SWITCH_INITIAL_STATE: True | USE_FC_IN_INPUT-SUM: False
+STRATEGY: post-combine | FUSION_WAY: lp | SWITCH_PLOT: attention_gate_dot
+ADJACENT_WINDOW_RATIO(0-100%): 4 | LONG_TERM_SCORE: no_use | SHORT_TERM_SCORE: no_use
+DROPOUT: 0.8 | LEARNING_RATE: 0.001 | BATCHSIZE: 100 | SEED: 0
+OUTER_RNN_SIZE: 80 | INNER_RNN_SIZE: 80 | EMBEDDING_SIZE: 80
+TRAIN_N_SESSIONS: 9501 | N_ITEMS: 4332 | N_LAYERS: 1 | SEQLEN: 14 | MAX_EPOCHS: 200
+------------------------------------------
+
+INFO:root:2022-11-15 04:41:44.561383
+	Epoch #: 193
+	Epoch loss: 13.982892461121082
+
+
+i<=1 Recall@5: 0.6888 MRR@5: 0.6534 NDCG@5: 0.6623 Recall@10: 0.7081 MRR@10: 0.6559 NDCG@10: 0.6673 Recall@20: 0.7287 MRR@20: 0.6573 NDCG@20: 0.6706 
+i<=2 Recall@5: 0.6357 MRR@5: 0.5962 NDCG@5: 0.6079 Recall@10: 0.6566 MRR@10: 0.5989 NDCG@10: 0.6141 Recall@20: 0.6797 MRR@20: 0.6005 NDCG@20: 0.6185 
+i<=3 Recall@5: 0.5911 MRR@5: 0.5496 NDCG@5: 0.5622 Recall@10: 0.6155 MRR@10: 0.5528 NDCG@10: 0.5702 Recall@20: 0.6413 MRR@20: 0.5545 NDCG@20: 0.5758 
+i<=4 Recall@5: 0.5614 MRR@5: 0.5188 NDCG@5: 0.5318 Recall@10: 0.5876 MRR@10: 0.5223 NDCG@10: 0.5406 Recall@20: 0.616 MRR@20: 0.5242 NDCG@20: 0.5474 
+i<=5 Recall@5: 0.5424 MRR@5: 0.4994 NDCG@5: 0.5125 Recall@10: 0.569 MRR@10: 0.5029 NDCG@10: 0.5215 Recall@20: 0.5984 MRR@20: 0.5049 NDCG@20: 0.5287 
+i<=6 Recall@5: 0.5286 MRR@5: 0.4856 NDCG@5: 0.4977 Recall@10: 0.5554 MRR@10: 0.4891 NDCG@10: 0.5079 Recall@20: 0.5863 MRR@20: 0.4913 NDCG@20: 0.5155 
+i<=7 Recall@5: 0.5197 MRR@5: 0.4763 NDCG@5: 0.4873 Recall@10: 0.5469 MRR@10: 0.4799 NDCG@10: 0.4989 Recall@20: 0.5785 MRR@20: 0.4821 NDCG@20: 0.5069 
+i<=8 Recall@5: 0.5136 MRR@5: 0.47 NDCG@5: 0.4796 Recall@10: 0.5412 MRR@10: 0.4736 NDCG@10: 0.4928 Recall@20: 0.573 MRR@20: 0.4758 NDCG@20: 0.501 
+i<=9 Recall@5: 0.5085 MRR@5: 0.4649 NDCG@5: 0.4737 Recall@10: 0.5362 MRR@10: 0.4685 NDCG@10: 0.4877 Recall@20: 0.5684 MRR@20: 0.4707 NDCG@20: 0.4961 
+i<=10 Recall@5: 0.5051 MRR@5: 0.4615 NDCG@5: 0.4696 Recall@10: 0.5328 MRR@10: 0.4651 NDCG@10: 0.4843 Recall@20: 0.5653 MRR@20: 0.4673 NDCG@20: 0.4927 
+i<=11 Recall@5: 0.5027 MRR@5: 0.459 NDCG@5: 0.4667 Recall@10: 0.5307 MRR@10: 0.4627 NDCG@10: 0.4816 Recall@20: 0.5632 MRR@20: 0.4649 NDCG@20: 0.4904 
+i<=12 Recall@5: 0.5006 MRR@5: 0.4571 NDCG@5: 0.4646 Recall@10: 0.5288 MRR@10: 0.4607 NDCG@10: 0.4797 Recall@20: 0.5613 MRR@20: 0.463 NDCG@20: 0.4885 
+i<=13 Recall@5: 0.4992 MRR@5: 0.4558 NDCG@5: 0.4632 Recall@10: 0.5274 MRR@10: 0.4595 NDCG@10: 0.4783 Recall@20: 0.5601 MRR@20: 0.4617 NDCG@20: 0.4873 
+i<=14 Recall@5: 0.4985 MRR@5: 0.4551 NDCG@5: 0.4624 Recall@10: 0.5266 MRR@10: 0.4587 NDCG@10: 0.4775 Recall@20: 0.5592 MRR@20: 0.461 NDCG@20: 0.4865 
+
+INFO:root:2022-11-15 04:41:45.202037
+------------------------------------------
+DATASET: steam | MODEL: LCII_ver_post-combine_w-4_att
+SWITCH_INITIAL_STATE: True | USE_FC_IN_INPUT-SUM: False
+STRATEGY: post-combine | FUSION_WAY: att | SWITCH_PLOT: attention_gate_dot
+ADJACENT_WINDOW_RATIO(0-100%): 4 | LONG_TERM_SCORE: no_use | SHORT_TERM_SCORE: no_use
+DROPOUT: 0.8 | LEARNING_RATE: 0.001 | BATCHSIZE: 100 | SEED: 0
+OUTER_RNN_SIZE: 80 | INNER_RNN_SIZE: 80 | EMBEDDING_SIZE: 80
+TRAIN_N_SESSIONS: 9501 | N_ITEMS: 4332 | N_LAYERS: 1 | SEQLEN: 14 | MAX_EPOCHS: 200
+------------------------------------------
+
+INFO:root:2022-11-15 05:51:52.951302
+	Epoch #: 200
+	Epoch loss: 16.48107209801674
+
+
+i<=1 Recall@5: 0.6652 MRR@5: 0.6278 NDCG@5: 0.6374 Recall@10: 0.6833 MRR@10: 0.6302 NDCG@10: 0.6427 Recall@20: 0.7058 MRR@20: 0.6318 NDCG@20: 0.6476 
+i<=2 Recall@5: 0.6031 MRR@5: 0.5637 NDCG@5: 0.5749 Recall@10: 0.6246 MRR@10: 0.5666 NDCG@10: 0.5816 Recall@20: 0.6507 MRR@20: 0.5684 NDCG@20: 0.5886 
+i<=3 Recall@5: 0.5577 MRR@5: 0.515 NDCG@5: 0.528 Recall@10: 0.5822 MRR@10: 0.5182 NDCG@10: 0.5362 Recall@20: 0.6114 MRR@20: 0.5203 NDCG@20: 0.5443 
+i<=4 Recall@5: 0.5303 MRR@5: 0.4862 NDCG@5: 0.4997 Recall@10: 0.5575 MRR@10: 0.4898 NDCG@10: 0.5092 Recall@20: 0.5886 MRR@20: 0.492 NDCG@20: 0.5182 
+i<=5 Recall@5: 0.5119 MRR@5: 0.468 NDCG@5: 0.4814 Recall@10: 0.5399 MRR@10: 0.4717 NDCG@10: 0.4912 Recall@20: 0.5724 MRR@20: 0.474 NDCG@20: 0.5008 
+i<=6 Recall@5: 0.4994 MRR@5: 0.4554 NDCG@5: 0.4678 Recall@10: 0.528 MRR@10: 0.4592 NDCG@10: 0.479 Recall@20: 0.5609 MRR@20: 0.4615 NDCG@20: 0.4887 
+i<=7 Recall@5: 0.4909 MRR@5: 0.447 NDCG@5: 0.4581 Recall@10: 0.5202 MRR@10: 0.4509 NDCG@10: 0.4709 Recall@20: 0.5535 MRR@20: 0.4532 NDCG@20: 0.4807 
+i<=8 Recall@5: 0.4847 MRR@5: 0.4409 NDCG@5: 0.4508 Recall@10: 0.5144 MRR@10: 0.4449 NDCG@10: 0.4649 Recall@20: 0.548 MRR@20: 0.4472 NDCG@20: 0.4749 
+i<=9 Recall@5: 0.4798 MRR@5: 0.436 NDCG@5: 0.4453 Recall@10: 0.5096 MRR@10: 0.4399 NDCG@10: 0.4602 Recall@20: 0.5438 MRR@20: 0.4423 NDCG@20: 0.4705 
+i<=10 Recall@5: 0.4764 MRR@5: 0.4327 NDCG@5: 0.4415 Recall@10: 0.5063 MRR@10: 0.4367 NDCG@10: 0.4569 Recall@20: 0.5407 MRR@20: 0.4391 NDCG@20: 0.4673 
+i<=11 Recall@5: 0.4743 MRR@5: 0.4305 NDCG@5: 0.4387 Recall@10: 0.5043 MRR@10: 0.4345 NDCG@10: 0.4545 Recall@20: 0.5389 MRR@20: 0.4369 NDCG@20: 0.4653 
+i<=12 Recall@5: 0.4724 MRR@5: 0.4287 NDCG@5: 0.4368 Recall@10: 0.5024 MRR@10: 0.4327 NDCG@10: 0.4527 Recall@20: 0.5368 MRR@20: 0.4351 NDCG@20: 0.4635 
+i<=13 Recall@5: 0.4712 MRR@5: 0.4275 NDCG@5: 0.4354 Recall@10: 0.5011 MRR@10: 0.4315 NDCG@10: 0.4514 Recall@20: 0.5357 MRR@20: 0.4339 NDCG@20: 0.4624 
+i<=14 Recall@5: 0.4704 MRR@5: 0.4267 NDCG@5: 0.4347 Recall@10: 0.5003 MRR@10: 0.4307 NDCG@10: 0.4506 Recall@20: 0.535 MRR@20: 0.4332 NDCG@20: 0.4616 
+
+INFO:root:2022-11-15 05:51:53.525386
+------------------------------------------
+DATASET: steam | MODEL: LCII_ver_post-combine_w-4_fix_L-0.2_S-0.8
+SWITCH_INITIAL_STATE: True | USE_FC_IN_INPUT-SUM: False
+STRATEGY: post-combine | FUSION_WAY: fix | SWITCH_PLOT: attention_gate_dot
+ADJACENT_WINDOW_RATIO(0-100%): 4 | LONG_TERM_SCORE: 0.2 | SHORT_TERM_SCORE: 0.8
+DROPOUT: 0.8 | LEARNING_RATE: 0.001 | BATCHSIZE: 100 | SEED: 0
+OUTER_RNN_SIZE: 80 | INNER_RNN_SIZE: 80 | EMBEDDING_SIZE: 80
+TRAIN_N_SESSIONS: 9501 | N_ITEMS: 4332 | N_LAYERS: 1 | SEQLEN: 14 | MAX_EPOCHS: 200
+------------------------------------------
+
+INFO:root:2022-11-15 07:00:48.306606
+	Epoch #: 195
+	Epoch loss: 13.658089816570282
+
+
+i<=1 Recall@5: 0.6962 MRR@5: 0.6589 NDCG@5: 0.6679 Recall@10: 0.7143 MRR@10: 0.6613 NDCG@10: 0.6727 Recall@20: 0.7292 MRR@20: 0.6624 NDCG@20: 0.6748 
+i<=2 Recall@5: 0.6394 MRR@5: 0.6014 NDCG@5: 0.6113 Recall@10: 0.6592 MRR@10: 0.6041 NDCG@10: 0.6172 Recall@20: 0.6786 MRR@20: 0.6054 NDCG@20: 0.6209 
+i<=3 Recall@5: 0.5926 MRR@5: 0.5522 NDCG@5: 0.5635 Recall@10: 0.6154 MRR@10: 0.5553 NDCG@10: 0.5707 Recall@20: 0.6382 MRR@20: 0.5568 NDCG@20: 0.5758 
+i<=4 Recall@5: 0.5622 MRR@5: 0.5211 NDCG@5: 0.5327 Recall@10: 0.5869 MRR@10: 0.5244 NDCG@10: 0.5409 Recall@20: 0.6117 MRR@20: 0.5261 NDCG@20: 0.5467 
+i<=5 Recall@5: 0.5432 MRR@5: 0.501 NDCG@5: 0.5129 Recall@10: 0.5687 MRR@10: 0.5044 NDCG@10: 0.5217 Recall@20: 0.5949 MRR@20: 0.5062 NDCG@20: 0.528 
+i<=6 Recall@5: 0.529 MRR@5: 0.487 NDCG@5: 0.4977 Recall@10: 0.5551 MRR@10: 0.4905 NDCG@10: 0.508 Recall@20: 0.5823 MRR@20: 0.4924 NDCG@20: 0.5146 
+i<=7 Recall@5: 0.5196 MRR@5: 0.4778 NDCG@5: 0.4873 Recall@10: 0.5462 MRR@10: 0.4813 NDCG@10: 0.4989 Recall@20: 0.5739 MRR@20: 0.4832 NDCG@20: 0.5057 
+i<=8 Recall@5: 0.513 MRR@5: 0.4713 NDCG@5: 0.4795 Recall@10: 0.54 MRR@10: 0.4749 NDCG@10: 0.4926 Recall@20: 0.5683 MRR@20: 0.4769 NDCG@20: 0.4996 
+i<=9 Recall@5: 0.5079 MRR@5: 0.4661 NDCG@5: 0.4736 Recall@10: 0.5354 MRR@10: 0.4698 NDCG@10: 0.4877 Recall@20: 0.5639 MRR@20: 0.4718 NDCG@20: 0.4948 
+i<=10 Recall@5: 0.5044 MRR@5: 0.4625 NDCG@5: 0.4695 Recall@10: 0.5319 MRR@10: 0.4662 NDCG@10: 0.4842 Recall@20: 0.5606 MRR@20: 0.4682 NDCG@20: 0.4914 
+i<=11 Recall@5: 0.502 MRR@5: 0.4602 NDCG@5: 0.4666 Recall@10: 0.5298 MRR@10: 0.464 NDCG@10: 0.4817 Recall@20: 0.5587 MRR@20: 0.466 NDCG@20: 0.4893 
+i<=12 Recall@5: 0.5 MRR@5: 0.4584 NDCG@5: 0.4645 Recall@10: 0.5277 MRR@10: 0.4621 NDCG@10: 0.4796 Recall@20: 0.5569 MRR@20: 0.4641 NDCG@20: 0.4874 
+i<=13 Recall@5: 0.4989 MRR@5: 0.4571 NDCG@5: 0.4631 Recall@10: 0.5266 MRR@10: 0.4608 NDCG@10: 0.4783 Recall@20: 0.5558 MRR@20: 0.4628 NDCG@20: 0.4862 
+i<=14 Recall@5: 0.498 MRR@5: 0.4563 NDCG@5: 0.4623 Recall@10: 0.5257 MRR@10: 0.46 NDCG@10: 0.4775 Recall@20: 0.5549 MRR@20: 0.4621 NDCG@20: 0.4854 
+
