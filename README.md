@@ -1,3 +1,4 @@
+![](https://views.whatilearened.today/views/github/Junwu0615/LCII-Rec-Model.svg)
 [![](https://img.shields.io/badge/Project-RecommendationSystem-blue.svg?style=plastic)](https://pse.is/5blcdx) 
 [![](https://img.shields.io/badge/Project-Tensorflow-blue.svg?style=plastic)](https://pypi.org/project/tensorflow/) 
 [![](https://img.shields.io/badge/Language-Python-blue.svg?style=plastic)](https://www.python.org/) </br>
