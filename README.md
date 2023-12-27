@@ -1,4 +1,5 @@
-![](https://views.whatilearened.today/views/github/Junwu0615/LCII-Rec-Model.svg)
+<a href='https://github.com/Junwu0615/LCII-Rec-Model'><img alt='GitHub Views' src='https://views.whatilearened.today/views/github/Junwu0615/LCII-Rec-Model.svg'> 
+<a href='https://github.com/Junwu0615/LCII-Rec-Model'><img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/Junwu0615/7f654406c51d568d31d565347f22d609/raw/LCII-Rec-Model_clone.json&logo=github'> </br>
 [![](https://img.shields.io/badge/Project-RecommendationSystem-blue.svg?style=plastic)](https://pse.is/5blcdx) 
 [![](https://img.shields.io/badge/Project-Tensorflow-blue.svg?style=plastic)](https://pypi.org/project/tensorflow/) 
 [![](https://img.shields.io/badge/Language-Python-blue.svg?style=plastic)](https://www.python.org/) </br>
