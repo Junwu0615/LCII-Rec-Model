@@ -36,15 +36,15 @@ git clone https://github.com/Junwu0615/LCII-Rec-Model.git
 
 ## STEP.2　DOWNLOADS DATASETS
 
-於 `.\Datasets` 將資料集放入，各資料集來源如下所示 :<br/>
+於 `/Datasets` 將資料集放入，各資料集來源如下所示 :<br/>
 [Amazon](http://jmcauley.ucsd.edu/data/amazon) / [Last.fm / Tmall](https://github.com/RUCAIBox/RecSysDatasets) / [Steam](https://cseweb.ucsd.edu/~jmcauley/datasets.html#steam_data) / [MovieLens_1M / MovieLens_20M](https://grouplens.org/datasets/movielens/) / [Reddit / Instacart](https://github.com/olesls/master_thesis)
 
 ## STEP.3　PREPROCESS
 
-於 `.\Preprocessing` 進行資料預處理。<br/>
+於 `/Preprocessing` 進行資料預處理。<br/>
 - `amazon_preprocess_ver. BERT4Rec.ipynb` : BERT4Rec 的 Amazon 輸入。<br/>
 - `amazon_preprocess_ver. LCII.ipynb` : LCII 的 Amazon 輸入。<br/>
-- `ml_steam_preprocess_ver. LCII.ipynb` : LCII 的 ml 和 steam 輸入。<br/>
+- `ml_steam_preprocess_ver. LCII.ipynb` : LCII 的 MovieLens 1M 和 Steam 輸入。<br/>
 - `see_pickle_...ipynb` : 檢視預處理完的內容。
 
 ## STEP.4　HYPER PARAMETERS
