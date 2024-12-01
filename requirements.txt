@@ -1,6 +1,6 @@
-tensorflow-gpu==2.4.0
-tf_slim==1.1.0
+tdqm==4.66.2
 pandas==1.5.3
 numpy==1.20.3
+tf_slim==1.1.0
 matplotlib==3.7.4
-tdqm==4.66.2
+tensorflow-gpu==2.4.0

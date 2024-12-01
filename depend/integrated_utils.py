@@ -1,30 +1,31 @@
-import collections
-import datetime
-import logging
-import math
 import numpy as np
-import os
-import pickle
-import time
+import os, time, pickle, math
+import logging, datetime, collections
 
 class IIRNNDataHandler:
     def __init__(self, dataset_path, batch_size, test_log, max_sess_reps, lt_internalsize, timebuckets=[0]):
         # LOAD DATASET
         self.dataset_path = dataset_path
         self.batch_size = batch_size
+
         print("Loading dataset")
         load_time = time.time()
         dataset = pickle.load(open(self.dataset_path, 'rb'))
+
         print("|- dataset loaded in", str(time.time()-load_time), "s")
         self.trainset = dataset['trainset']
         self.testset = dataset['testset']
         self.train_session_lengths = dataset['train_session_lengths']
         self.test_session_lengths = dataset['test_session_lengths']
         self.num_users = len(self.trainset) +1
-        if len(self.trainset) != len(self.testset): raise Exception("""Testset and trainset have different amount of users.""")
+
+        if len(self.trainset) != len(self.testset):
+            raise Exception("""Testset and trainset have different amount of users.""")
+
         # II_RNN stuff
         self.MAX_SESSION_REPRESENTATIONS = max_sess_reps
         self.LT_INTERNALSIZE = lt_internalsize
+
         # LOG
         self.test_log = test_log
         logging.basicConfig(filename=self.test_log,level=logging.INFO)
@@ -35,11 +36,12 @@ class IIRNNDataHandler:
     # call before training and testing
     def reset_user_batch_data(self):
         # the index of the next session(event) to retrieve for a user
-        self.user_next_session_to_retrieve = [0]*self.num_users
+        self.user_next_session_to_retrieve = [0] * self.num_users
         # list of users who have not been exhausted for sessions
         self.users_with_remaining_sessions = []
-        # a list where we store the number of remaining sessions for each user. Updated for eatch batch fetch. But we don't want to create the object multiple times.
-        self.num_remaining_sessions_for_user = [0]*self.num_users
+        # a list where we store the number of remaining sessions for each user.
+        # Updated for eatch batch fetch. But we don't want to create the object multiple times.
+        self.num_remaining_sessions_for_user = [0] * self.num_users
         for k, v in self.trainset.items():
             # everyone has at least one session
             self.users_with_remaining_sessions.append(k)
@@ -47,15 +49,15 @@ class IIRNNDataHandler:
     def reset_user_session_representations(self):
         istate = np.zeros([self.LT_INTERNALSIZE])
         # session representations for each user is stored here
-        self.user_session_representations = [None]*self.num_users
+        self.user_session_representations = [None] * self.num_users
         # the number of (real) session representations a user has
-        self.num_user_session_representations = [0]*self.num_users
+        self.num_user_session_representations = [0] * self.num_users
         for k, v in self.trainset.items():
             self.user_session_representations[k] = collections.deque(maxlen=self.MAX_SESSION_REPRESENTATIONS)
             for i in range(self.MAX_SESSION_REPRESENTATIONS):
                 self.user_session_representations[k].append(istate)
 
-    def get_N_highest_indexes(a,N):
+    def get_n_highest_indexes(self, a,N):
         return np.argsort(a)[::-1][:N]
 
     def add_unique_items_to_dict(self, items, dataset):
@@ -92,7 +94,7 @@ class IIRNNDataHandler:
         return self.get_num_batches(self.testset)
 
     def get_next_batch(self, dataset, dataset_session_lengths):
-        session_batch = []; session_lengths = []; sess_rep_batch = []; sess_rep_lengths = []; 
+        session_batch, session_lengths, sess_rep_batch, sess_rep_lengths = [], [], [], []
         
         # Decide which users to take sessions from. First count the number of remaining sessions
         remaining_sessions = [0]*len(self.users_with_remaining_sessions)
@@ -101,7 +103,7 @@ class IIRNNDataHandler:
             remaining_sessions[i] = len(dataset[user]) - self.user_next_session_to_retrieve[user]
         
         # index of users to get
-        user_list = IIRNNDataHandler.get_N_highest_indexes(remaining_sessions, self.batch_size)
+        user_list = self.get_n_highest_indexes(remaining_sessions, self.batch_size)
         for i in range(len(user_list)):
             user_list[i] = self.users_with_remaining_sessions[user_list[i]]
 
@@ -157,7 +159,7 @@ class IIRNNDataHandler:
         for i in range(len(user_list)):
             user = user_list[i]
             session_representation = sessions_representations[i]
-            num_reps = self.num_user_session_representations[user]
+            # num_reps = self.num_user_session_representations[user]
             self.user_session_representations[user].append(session_representation)
             self.num_user_session_representations[user] = self.MAX_SESSION_REPRESENTATIONS
         
