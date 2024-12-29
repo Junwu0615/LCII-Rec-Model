@@ -159,7 +159,7 @@ if __name__ == "__main__":
     print(" --  Total num of missing value [0,0] | "+str(pading_count))
     print(" --  The proportion of missing values ​​in the overall item | "+ str(pading_proportion) +"%")
     
-    ## Sample
+    ## sample
     trainset = pickle_train_test_split_sample['trainset']
     testset = pickle_train_test_split_sample['testset']
     train_session_lengths = pickle_train_test_split_sample['train_session_lengths']

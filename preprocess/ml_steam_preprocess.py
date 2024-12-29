@@ -48,7 +48,7 @@ def check_dataset_path(dataset):
     DATASET_USER_SESSIONS_1 = DATASET_DIR + "/pickle" + '/3_user_sessions_1.pickle'
     DATASET_USER_SESSIONS_2 = DATASET_DIR + "/pickle" + '/3_user_sessions_2.pickle'
     DATASET_TRAIN_TEST_SPLIT = DATASET_DIR + "/pickle" + '/4_train_test_split.pickle'
-    DATASET_TRAIN_TEST_SPLIT_2 = DATASET_DIR + "/pickle" + '/4_train_test_split_sample.pickle' # Sample name
+    DATASET_TRAIN_TEST_SPLIT_2 = DATASET_DIR + "/pickle" + '/4_train_test_split_sample.pickle' # sample name
     DATASET_BPR_MF = DATASET_DIR + "/pickle" + '/bpr-mf_train_test_split.pickle'
     if dataset == MovieLens_1M: SESSION_TIMEDELTA = 60*60*24 # 1 hours 60*30
     elif dataset == Steam: SESSION_TIMEDELTA = 60*60*24 # 1 hours 60*30
@@ -312,7 +312,7 @@ if __name__ == "__main__":
     if not file_exists(DATASET_USER_SESSIONS_1): print("Reduce ineligible interactions and history."); reduce_ineligible_interactions_and_history();         
     if not file_exists(DATASET_USER_SESSIONS_2): print("Sorting sessions to users."); sort_and_split_user_sessions(); 
     if not file_exists(DATASET_TRAIN_TEST_SPLIT): print("Splitting dataset into training and testing sets."); split_to_training_and_testing(); 
-    if not file_exists(DATASET_TRAIN_TEST_SPLIT_2): print("Splitting dataset into training and testing sets to Sample Data."); split_to_training_and_testing_sample(); 
+    if not file_exists(DATASET_TRAIN_TEST_SPLIT_2): print("Splitting dataset into training and testing sets to sample data."); split_to_training_and_testing_sample();
     if not file_exists(DATASET_BPR_MF): print("Creating dataset for BPR-MF."); create_bpr_mf_sets(); 
     end_time = (time.time() - runtime)/60
     end_time = "%.2f" % end_time
